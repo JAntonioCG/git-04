@@ -18,9 +18,14 @@ document.addEventListener('click', (e) => {
   }
 })
 
+document.getElementById("footer").addEventListener("click", function() {
+    location.reload();
+});
+
+
 const btnAumentar = e => {
   carritoArray = carritoArray.map((item) => {
-    if (item.id = e.target.dataset.id) {
+    if (item.id === e.target.dataset.id) {
       item.cantidad++
     }
     return item
